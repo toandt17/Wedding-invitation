@@ -7,6 +7,7 @@ class TemplateRegistry
     private static array $templates = [
         Template1::class,
         Template2::class,
+        Template3::class,
     ];
 
     public static function getAllTemplates(): array

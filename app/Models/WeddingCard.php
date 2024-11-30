@@ -14,6 +14,7 @@ class WeddingCard extends Model
         // Thông tin cơ bản
         'groom_name',
         'bride_name',
+        'couple_email',
         // Ảnh đại diện
         'cover_image',
         'groom_image',
@@ -28,16 +29,33 @@ class WeddingCard extends Model
         'venue_name',
         'venue_address',
         'google_map_iframe',
+        'google_map',
         // Nội dung
         'wedding_poem',
         'qr_code',
         'is_active',
         'wedding_music_id',
+        'lunar_wedding_date',
+        'party_time',
+        'price',
+        'is_free',
+        'is_hot',
+        'bank_account_name',
+        'bank_account_number',
+        'bank_name',
+        'seo_title',
+        'seo_description',
+        'seo_image',
     ];
 
     protected $casts = [
         'wedding_date' => 'datetime',
+        'lunar_wedding_date' => 'datetime',
+        'party_time' => 'datetime',
         'is_active' => 'boolean',
+        'is_free' => 'boolean',
+        'is_hot' => 'boolean',
+        'price' => 'decimal:2',
     ];
 
     public function photos(): HasMany
@@ -73,5 +91,10 @@ class WeddingCard extends Model
     public function music()
     {
         return $this->belongsTo(WeddingMusic::class, 'wedding_music_id');
+    }
+
+    public function getSeoImageUrlAttribute()
+    {
+        return $this->seo_image ? Storage::url($this->seo_image) : null;
     }
 }

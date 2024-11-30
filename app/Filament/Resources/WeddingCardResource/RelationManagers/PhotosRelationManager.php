@@ -22,17 +22,26 @@ class PhotosRelationManager extends RelationManager
     {
         return $form
             ->schema([
-                Forms\Components\FileUpload::make('image_path')
-                    ->label('Hình ảnh')
-                    ->image()
-                    ->required(),
                 Forms\Components\Select::make('type')
-                    ->label('Loại')
+                    ->label('Loại ảnh')
                     ->options([
                         'gallery' => 'Album ảnh',
                         'featured' => 'Ảnh nổi bật',
+                        'cover' => 'Ảnh bìa',
+                        'bride' => 'Ảnh cô dâu',
+                        'groom' => 'Ảnh chú rể',
                     ])
                     ->required(),
+                Forms\Components\FileUpload::make('image_path')
+                    ->label('Hình ảnh')
+                    ->image()
+                    ->disk('public')
+                    ->directory('wedding-cards/photos')
+                    ->visibility('public')
+                    ->required(),
+                Forms\Components\Textarea::make('description')
+                    ->label('Mô tả')
+                    ->maxLength(500),
                 Forms\Components\TextInput::make('sort_order')
                     ->label('Thứ tự')
                     ->numeric()
@@ -46,8 +55,16 @@ class PhotosRelationManager extends RelationManager
             ->columns([
                 Tables\Columns\ImageColumn::make('image_path')
                     ->label('Hình ảnh'),
-                Tables\Columns\TextColumn::make('type')
-                    ->label('Loại'),
+                Tables\Columns\SelectColumn::make('type')
+                    ->label('Loại ảnh')
+                    ->options([
+                        'gallery' => 'Album ảnh',
+                        'featured' => 'Ảnh nổi bật',
+                        'cover' => 'Ảnh bìa',
+                        'bride' => 'Ảnh cô dâu',
+                        'groom' => 'Ảnh chú rể',
+                    ])
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('sort_order')
                     ->label('Thứ tự')
                     ->sortable(),

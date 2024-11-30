@@ -36,6 +36,11 @@ class WeddingCardResource extends Resource
                             ->required()
                             ->unique(ignoreRecord: true)
                             ->helperText('Ví dụ: hauvami, toanvahoa'),
+                        Forms\Components\TextInput::make('couple_email')
+                            ->label('Email cặp đôi')
+                            ->email()
+                            ->required()
+                            ->helperText('Email này sẽ dùng để xem dữ liệu khách mời trong Google Sheet'),
                         Forms\Components\Toggle::make('is_active')
                             ->label('Kích hoạt')
                             ->default(true),
@@ -91,7 +96,13 @@ class WeddingCardResource extends Resource
                 Forms\Components\Section::make('Thông tin tiệc cưới')
                     ->schema([
                         Forms\Components\DateTimePicker::make('wedding_date')
-                            ->label('Thời gian')
+                            ->label('Ngày cưới (Dương lịch)')
+                            ->required(),
+                        Forms\Components\DateTimePicker::make('lunar_wedding_date')
+                            ->label('Ngày cưới (Âm lịch)')
+                            ->required(),
+                        Forms\Components\TimePicker::make('party_time')
+                            ->label('Giờ tiệc cưới')
                             ->required(),
                         Forms\Components\TextInput::make('venue_name')
                             ->label('Tên địa điểm')
@@ -102,7 +113,44 @@ class WeddingCardResource extends Resource
                         Forms\Components\Textarea::make('google_map_iframe')
                             ->label('Google Map Iframe')
                             ->helperText('Dán mã nhúng Google Map vào đây'),
+                        Forms\Components\Textarea::make('google_map')
+                            ->label('Google Map')
+                            ->helperText('Dán link Google Map vào đây'),
                     ])->columns(2),
+
+                Forms\Components\Section::make('Thông tin thanh toán')
+                    ->schema([
+                        Forms\Components\TextInput::make('price')
+                            ->label('Giá thiệp')
+                            ->numeric()
+                            ->prefix('VND'),
+                        Forms\Components\Toggle::make('is_free')
+                            ->label('Miễn phí'),
+                        Forms\Components\Toggle::make('is_hot')
+                            ->label('Nổi bật'),
+                        Forms\Components\TextInput::make('bank_account_name')
+                            ->label('Tên chủ tài khoản'),
+                        Forms\Components\TextInput::make('bank_account_number')
+                            ->label('Số tài khoản'),
+                        Forms\Components\TextInput::make('bank_name')
+                            ->label('Tên ngân hàng'),
+                    ])->columns(2),
+
+                Forms\Components\Section::make('SEO')
+                    ->schema([
+                        Forms\Components\TextInput::make('seo_title')
+                            ->label('Tiêu đề SEO')
+                            ->maxLength(60),
+                        Forms\Components\Textarea::make('seo_description')
+                            ->label('Mô tả SEO')
+                            ->maxLength(160),
+                        Forms\Components\FileUpload::make('seo_image')
+                            ->label('Ảnh SEO')
+                            ->image()
+                            ->disk('public')
+                            ->directory('wedding-cards/seo')
+                            ->visibility('public'),
+                    ]),
 
                 Forms\Components\Section::make('Nội dung khác')
                     ->schema([
@@ -132,6 +180,9 @@ class WeddingCardResource extends Resource
                 Tables\Columns\TextColumn::make('slug')
                     ->label('Đường dẫn')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('couple_email')
+                    ->label('Email cặp đôi')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('groom_name')
                     ->label('Chú rể')
                     ->searchable(),
@@ -148,9 +199,30 @@ class WeddingCardResource extends Resource
                     ->label('Ngày tạo')
                     ->dateTime()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('price')
+                    ->label('Giá')
+                    ->money('VND')
+                    ->sortable(),
+                Tables\Columns\IconColumn::make('is_free')
+                    ->label('Miễn phí')
+                    ->boolean(),
+                Tables\Columns\IconColumn::make('is_hot')
+                    ->label('Nổi bật')
+                    ->boolean(),
             ])
             ->filters([
-                //
+                Tables\Filters\SelectFilter::make('is_free')
+                    ->label('Miễn phí')
+                    ->options([
+                        1 => 'Miễn phí',
+                        0 => 'Có phí',
+                    ]),
+                Tables\Filters\SelectFilter::make('is_hot')
+                    ->label('Nổi bật')
+                    ->options([
+                        1 => 'Nổi bật',
+                        0 => 'Bình thường',
+                    ]),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

@@ -1,0 +1,2180 @@
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.mobile-view {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wedding-cover {
+    height: 100vh;
+    position: relative;
+    background: #fff;
+}
+
+.wedding-cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.couple-names {
+    position: absolute;
+    top: 8%;
+    background: none;
+    padding: 0;
+    width: 100%;
+}
+.font-script {
+    font-family: 'The Nautigal', cursive;
+    font-size: 3.5rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: inline-block;
+    transform: rotate(-5deg);
+}
+.wedding-details {
+    position: absolute;
+    bottom: 20%;
+    width: 140%;
+    background: none;
+    padding: 0;
+}
+.invitation-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+.line {
+    width: 80px;
+    height: 1px;
+    background: #000;
+}
+.date-time {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+.time {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+}
+.date-format {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.quote-section {
+    padding: 30px 20px;
+    background: #fff;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.family-section {
+    padding: 30px 20px;
+    background: #fff;
+    min-height: auto;
+}
+
+.person-section {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.person-photo {
+    margin-bottom: 20px;
+}
+
+.person-photo img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.person-info {
+    padding: 0 20px;
+}
+
+.person-info .role {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.person-info .couple-name {
+    font-family: 'The Nautigal', cursive;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.font-script-small {
+    font-family: 'The Nautigal', cursive;
+    font-size: 2rem;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.font-script-medium {
+    font-family: 'The Nautigal', cursive;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+.font-script-medium-1{
+    font-family: 'The Nautigal', cursive;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.family-side {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.parents p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.couple-name {
+    margin-bottom: 0;
+}
+
+/* Điều chỉnh responsive */
+@media (min-width: 768px) {
+    .mobile-view {
+        max-width: 400px;
+    }
+    .row {
+        margin: 0;
+    }
+}
+
+/* Điều chỉnh cho mobile */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .container-fluid {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .row {
+        margin: 0 !important;
+    }
+    .person-photo img {
+        height: 400px;
+    }
+}
+
+.couple-section {
+    background: #fff;
+}
+
+.heart-icon {
+    transform: rotate(-15deg);
+}
+
+.role {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.couple-name {
+    font-family: 'The Nautigal', cursive;
+    font-size: 2.2rem;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.couple-photos {
+    padding: 15px;
+    background: #2F4F2F;
+    margin: 20px auto;
+    max-width: 430px;
+    overflow: hidden;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.photo-frame {
+    background: #2F4F2F;
+    padding: 0;
+    flex: 1;
+    opacity: 0;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Custom AOS animations */
+[data-aos="custom-slide-right"] {
+    transform: translateX(-200px);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos="custom-slide-right"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+[data-aos="custom-slide-left"] {
+    transform: translateX(200px);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos="custom-slide-left"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Hover effect */
+.photo-frame img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+
+    .photo-frame img {
+        height: 300px;
+    }
+}
+
+.wedding-gallery {
+    padding: 30px 0;
+    background: #fff;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-title .divider {
+    width: 40px;
+    margin: 0 auto 15px;
+    border-top: 1px solid #000;
+}
+
+.font-script-large {
+    font-family: 'The Nautigal', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.gallery-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 30px -15px;
+}
+
+.side-image {
+    width: 28%;
+    height: 200px;
+}
+
+.center-image {
+    width: 44%;
+    height: 300px;
+    margin: 0 10px;
+}
+
+.side-image img,
+.center-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Thêm hiệu ứng hover nếu muốn */
+.side-image img:hover,
+.center-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .gallery-grid {
+        margin: 20px -10px;
+    }
+
+    .side-image {
+        height: 160px;
+    }
+
+    .center-image {
+        height: 240px;
+    }
+}
+
+.calendar-section {
+    padding: 30px 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #4A3F35;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.event-time {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.time-highlight,
+.day-highlight {
+    color: #4A3F35;
+    font-weight: 600;
+}
+
+.date-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #4A3F35;
+}
+
+.date-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4A3F35;
+}
+
+.separator {
+    color: #4A3F35;
+    opacity: 0.5;
+    margin: 0 0.5rem;
+}
+
+.lunar-date {
+    font-style: italic;
+    color: #666;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.calendar-container {
+    max-width: 380px;
+    margin: 20px auto 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.calendar-header {
+    color: #4A3F35;
+    padding: 10px 15px;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    align-items: center;
+}
+
+.month-text {
+    font-family: 'The Nautigal', cursive;
+    font-size: 50px;
+    grid-column: 1;
+    text-align: center;
+    font-style: italic;
+}
+
+.month-number {
+    font-family: 'The Nautigal', cursive;
+    font-size: 50px;
+    grid-column: 2;
+    /* text-align: center; */
+    font-weight: 600;
+}
+
+.empty-cell {
+    grid-column: 3;
+}
+
+.year-cell {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.95;
+    font-style: italic;
+}
+
+/* Đảm bảo các ô có kích thước bằng nhau */
+.month-text,
+.month-number,
+.empty-cell,
+.year-cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+
+    .month-number {
+        font-size: 46px;
+    }
+
+    .year-cell {
+        font-size: 28px;
+    }
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #4A3F35;
+    color: white;
+    font-size: 13px;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 20px;
+    gap: 8px;
+    background: #fff;
+}
+
+.days div {
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.days div:first-child,
+.days div:nth-child(7n + 1) {
+    color: #ff6b6b;
+}
+
+.days .highlight {
+    position: relative;
+    color: #4A3F35;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.days .highlight::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid #8B0000; /* Màu viền đỏ đậm */
+    border-radius: 50%;
+    animation: circleAnimation 2s infinite;
+    z-index: -1;
+}
+
+.days .highlight::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(139, 0, 0, 0.5); /* Màu viền mờ hơn */
+    border-radius: 50%;
+    animation: circleAnimation 2s infinite 0.5s;
+    z-index: -1;
+}
+
+@keyframes circleAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.8;
+    }
+}
+
+/* Điều chnh kích thước ô trong lịch */
+.days div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.calendar-footer {
+    text-align: right;
+    padding: 20px;
+    background: #fff;
+}
+
+.heart-line {
+    width: 120px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+.venue-section {
+    padding: 30px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.venue-title {
+    font-family: 'The Nautigal', cursive;
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.venue-info {
+    background: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.venue-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.venue-address {
+    font-size: 1rem;
+    color: #666;
+}
+
+.map-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.map-frame {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-button {
+    display: inline-block;
+    background: rgba(74, 63, 53, 0.8);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.map-button:hover {
+    background: rgba(74, 63, 53, 1);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.wedding-album {
+    padding: 30px 0;
+    background: #fff;
+}
+
+.album-title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.title-line {
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: #000;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.album-grid {
+    display: flex;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.photo-item {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Ảnh to (1, 2, 3, 6) */
+.photo-item.large {
+    aspect-ratio: 3/4;
+}
+
+/* Ảnh nhỏ (4, 5) */
+.photo-item.small {
+    height: 150px;
+}
+
+@media (max-width: 767px) {
+    .album-grid {
+        padding: 0 15px;
+        gap: 10px;
+    }
+    .column {
+        gap: 10px;
+    }
+}
+
+.rsvp-section {
+    position: relative;
+    padding: 40px 0;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rsvp-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.rsvp-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Nút Gửi Mừng Cưới */
+.rsvp-button.gift {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.button-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 20px rgba(139, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.icon-wrapper i {
+    font-size: 28px;
+    color: white;
+    animation: giftBounce 2s infinite;
+}
+
+.text-wrapper {
+    flex: 1;
+    text-align: left;
+}
+
+.button-title {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.button-subtitle {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+/* Hiệu ứng hover */
+.rsvp-button.gift:hover .button-content {
+    transform: translateY(-5px);
+}
+
+.button-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #FF4444, #8B0000);
+    opacity: 0;
+    border-radius: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.rsvp-button.gift:hover .button-effect {
+    opacity: 0.2;
+}
+
+/* Animation cho icon quà */
+@keyframes giftBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Hiệu ứng lấp lánh */
+.button-content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    animation: sparkle 4s linear infinite;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rsvp-section {
+        padding: 30px 0;
+    }
+
+    .button-content {
+        padding: 15px;
+    }
+
+    .icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-wrapper i {
+        font-size: 24px;
+    }
+
+    .button-title {
+        font-size: 1.1rem;
+    }
+
+    .button-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+/* Thêm hiệu ứng ripple khi click */
+.rsvp-button.gift::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    opacity: 1;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Thêm class active cho modal */
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: modalPop 0.3s ease;
+}
+
+/* Animation khi modal xuất hiện */
+@keyframes modalPop {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Style cho nút đóng */
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.bank-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.qr-code {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.qr-code img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.scan-btn {
+    background: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+.scan-btn:hover {
+    background: #a00000;
+    transform: translateY(-2px);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #a00000;
+}
+
+/* Bank info styles */
+.bank-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bank-account {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bank-details {
+    flex: 1;
+    text-align: left;
+}
+
+.bank-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.account-number {
+    font-size: 1.2rem;
+    color: #8B0000;
+    margin: 8px 0;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.account-name {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.qr-code {
+    width: 120px;
+    text-align: center;
+}
+
+.qr-code img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.copy-btn {
+    background: #8B0000;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: #a00000;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .bank-account {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .qr-code {
+        width: 100px;
+    }
+
+    .bank-name,
+    .account-name {
+        font-size: 0.8rem;
+    }
+
+    .account-number {
+        font-size: 1.1rem;
+    }
+}
+
+/* Thêm animation khi mở modal */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    animation: modalFadeIn 0.3s ease;
+}
+
+.wedding-gift-section {
+    padding: 30px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.gift-title {
+    margin-bottom: 30px;
+}
+
+.gift-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.gift-account {
+    background: #f8f8f8;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.account-info {
+    flex: 1;
+    text-align: left;
+}
+
+.account-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.bank-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.account-number {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 8px 0;
+}
+
+.account-name {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.qr-code {
+    width: 120px;
+}
+
+.qr-code img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.copy-btn {
+    background: #8B0000;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: #a00000;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+    .gift-account {
+        padding: 20px;
+    }
+
+    .qr-code {
+        width: 100px;
+    }
+}
+
+@font-face {
+    font-family: 'UTM-Cafeta';
+    src: url('../fonts/UTM-Cafeta.ttf') format('truetype');
+}
+
+.family-section {
+    padding: 30px 20px;
+    background: #fff;
+    min-height: auto;
+}
+
+.family-side {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.parent-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.day-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .time {
+        font-size: 1rem;
+    }
+}
+
+/* Base animation styles */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+/* Custom animation durations */
+[data-aos][data-aos][data-aos-duration="400"],
+[data-aos][data-aos][data-aos-duration="400"].aos-animate {
+    transition-duration: 400ms;
+}
+
+/* Optional: Thêm custom animations */
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Optional: Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation styles */
+[data-aos="fade-right"] {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-out;
+}
+
+[data-aos="fade-right"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(100px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-out;
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.thank-you-section {
+    position: relative;
+    padding: 60px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.thank-you-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6px);
+}
+
+.thank-you-content {
+    position: relative;
+    z-index: 2;
+}
+
+.thank-you-content h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.thank-you-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* RSVP Buttons */
+.rsvp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rsvp-button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rsvp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.text-wrapper {
+    text-align: left;
+}
+
+.button-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.button-subtitle {
+    display: block;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* Modal Form */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #4A3F35;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #362F28;
+}
+
+/* Styles riêng cho nút tham dự */
+.attend-button {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    outline: none;
+}
+
+.attend-content {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(135deg, #2F4F4F, #4F6F6F);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 20px rgba(47, 79, 79, 0.2);
+    transition: all 0.3s ease;
+}
+
+.attend-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.attend-icon i {
+    font-size: 28px;
+    color: white;
+    animation: calendarPulse 2s infinite;
+}
+
+.attend-text {
+    flex: 1;
+    text-align: left;
+}
+
+.attend-title {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.attend-subtitle {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* Hover effects */
+.attend-button:hover .attend-content {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(47, 79, 79, 0.3);
+    background: linear-gradient(135deg, #3F5F5F, #5F7F7F);
+}
+
+.attend-button:active .attend-content {
+    transform: translateY(1px);
+}
+
+/* Calendar icon animation */
+@keyframes calendarPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Loại bỏ hiệu ứng ripple cũ */
+/* Responsive */
+@media (max-width: 768px) {
+    .attend-content {
+        padding: 15px;
+    }
+
+    .attend-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .attend-icon i {
+        font-size: 24px;
+    }
+
+    .attend-title {
+        font-size: 1.1rem;
+    }
+
+    .attend-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+/* Styles cho nút mừng cưới */
+.gift-button {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.gift-content {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(135deg, #8B0000, #FF0000);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 20px rgba(139, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.gift-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.gift-icon i {
+    font-size: 28px;
+    color: white;
+    animation: giftBounce 2s infinite;
+}
+
+.gift-text {
+    flex: 1;
+    text-align: left;
+}
+
+.gift-title {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.gift-subtitle {
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* Hover effects */
+.gift-button:hover .gift-content {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(139, 0, 0, 0.3);
+    background: linear-gradient(135deg, #A00000, #FF1111);
+}
+
+.gift-button:active .gift-content {
+    transform: translateY(1px);
+}
+
+/* Gift icon animation */
+@keyframes giftBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gift-content {
+        padding: 15px;
+    }
+
+    .gift-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .gift-icon i {
+        font-size: 24px;
+    }
+
+    .gift-title {
+        font-size: 1.1rem;
+    }
+
+    .gift-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+/* Container cho cả 2 nút */
+.rsvp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+/* Modal Form Styling */
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+    font-family: 'The Nautigal', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4A3F35;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f8f8;
+    color: #4A3F35;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #8B0000;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Submit Button Styling */
+.submit-button {
+    width: 100%;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #8B0000, #FF0000);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.close-btn:hover {
+    background: #e0e0e0;
+    color: #333;
+    transform: rotate(90deg);
+}
+
+/* Form Animation */
+@keyframes formFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content form {
+    animation: formFadeIn 0.5s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .modal-title {
+        font-size: 2.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 15px;
+    }
+
+    .submit-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Thank Modal Styles */
+.thank-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.thank-modal.show {
+    display: flex;
+    animation: fadeIn 0.5s ease;
+}
+
+.thank-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    height: 80vh;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    overflow: hidden;
+    animation: floatIn 0.8s ease;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.thank-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.thank-modal-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: sparkleIn 1s ease;
+}
+
+.thank-modal-title {
+    font-family: 'The Nautigal', cursive;
+    font-size: 5.5rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glitterEffect 2s infinite;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.thank-modal-message {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 75%;
+    animation: slideUp 0.8s ease 0.3s both;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation keyframes mới */
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes sparkleIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -45%) scale(0.9);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate(-50%, -48%) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes glitterEffect {
+    0% {
+        opacity: 0.9;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        opacity: 0.9;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .thank-modal-content {
+        width: 92%;
+        height: 70vh;
+        margin: 15px;
+    }
+
+    .thank-modal-title {
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+    }
+
+    .thank-modal-message {
+        font-size: 1.1rem;
+        max-width: 100%;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-height: 600px) {
+    .thank-modal-content {
+        height: 85vh;
+    }
+}
+
+/* Gift Modal Styles */
+.modal.gift-modal {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.gift-modal .modal-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 25px;
+    max-width: 340px;
+    width: 90%;
+    animation: modalFadeIn 0.5s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gift-modal .modal-title {
+    font-family: 'The Nautigal', cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.qr-container {
+    padding: 15px;
+}
+
+.qr-code {
+    width: 220px;
+    margin: 0 auto 20px;
+}
+
+.qr-code img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.qr-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.qr-btn {
+    flex: 1;
+    max-width: 130px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.qr-btn i {
+    font-size: 1rem;
+}
+
+.qr-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.qr-btn.outline {
+    background: transparent;
+    color: #1a1a1a;
+    border: 1.5px solid #1a1a1a;
+}
+
+.qr-btn.outline:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
